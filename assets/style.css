@@ -1,0 +1,41 @@
+/*
+.owner-firstname
+.owner-lastname
+.owner-mail
+.owner-address
+.owner-cp
+.owner-city
+.publication-firstname
+.publication-lastname
+.webmaster-firstname
+.webmaster-lastname
+.webmaster-mail
+.host-name
+.host-address
+.host-cp
+.host-city
+.website-url
+.website-name
+.website-mail
+.url-privacy
+*/
+
+nav {
+    justify-content: center!important;
+}
+
+.btn-container {
+    height: 140px;
+    margin: 25px auto;
+}
+
+.btn-copy {
+    height: 100%;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 80px;
+    padding: 25px 10px 15px 10px;
+}
