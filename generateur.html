@@ -8,6 +8,22 @@
         <title>Générateur de Mentions Légales et de Politique de Confidentialité - La Marketerie</title>
     </head>
     <body>
+        <!--
+ _____                           _
+|  __ \                         | |
+| |  \/ ___ _ __   ___ _ __ __ _| |_ ___ _   _ _ __
+| | __ / _ \ '_ \ / _ \ '__/ _` | __/ _ \ | | | '__|
+| |_\ \  __/ | | |  __/ | | (_| | ||  __/ |_| | |
+ \____/\___|_| |_|\___|_|  \__,_|\__\___|\__,_|_|
+
+
+ _            ___  ___           _        _            _
+| |           |  \/  |          | |      | |          (_)
+| |     __ _  | .  . | __ _ _ __| | _____| |_ ___ _ __ _  ___
+| |    / _` | | |\/| |/ _` | '__| |/ / _ \ __/ _ \ '__| |/ _ \
+| |___| (_| | | |  | | (_| | |  |   <  __/ ||  __/ |  | |  __/_
+\_____/\__,_| \_|  |_/\__,_|_|  |_|\_\___|\__\___|_|  |_|\___(_)
+-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <a class="navbar-brand" href="#">
                 Générateur - La Marketerie
@@ -15,103 +31,77 @@
         </nav>
 
         <section class="container">
-            <!--            <h2 class="text-center mt-3">Générateur</h2>-->
             <form class="mt-5">
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Propriétaire</h3>
                         <div class="form-group">
-                            <label for="owner-lastname-input">Nom</label>
-                            <input type="text" class="form-control" id="owner-lastname-input" placeholder="Nom">
+                            <label for="owner-name-input">Nom Propre <u>ou</u> Entreprise</label>
+                            <input type="text" class="form-control" id="owner-name-input"
+                                   placeholder="Ex: Jean Dupond OU La Marketerie">
                         </div>
                         <div class="form-group">
-                            <label for="owner-firstname-input">Prénom</label>
-                            <input type="text" class="form-control" id="owner-firstname-input" placeholder="Prénom">
+                            <label for="owner-sarl-input">SARL Numéro siret</label>
+                            <input type="text" class="form-control" id="owner-sarl-input" aria-describedby="sarlHelp"
+                                   placeholder="SARL 0000000">
+                            <small id="sarlHelp">Optionnel</small>
                         </div>
                         <div class="form-group">
                             <label for="owner-mail-input">Mail</label>
                             <input type="email" class="form-control" id="owner-mail-input"
-                                   placeholder="exemple@mail.fr">
+                                   placeholder="Ex: exemple@mail.fr">
                         </div>
                         <div class="form-group">
                             <label for="owner-address-input">Adresse</label>
-                            <input type="text" class="form-control" id="owner-address-input" placeholder="Adresse">
-                        </div>
-                        <div class="form-group">
-                            <label for="owner-cp-input">Code Postal</label>
-                            <input type="text" class="form-control" id="owner-cp-input" placeholder="12345">
-                        </div>
-                        <div class="form-group">
-                            <label for="owner-city-input">Ville</label>
-                            <input type="text" class="form-control" id="owner-city-input" placeholder="Ville">
+                            <input type="text" class="form-control" id="owner-address-input"
+                                   placeholder="Ex: 12 Rue des Exemples 12345 Ville">
                         </div>
                         <h3>Hébergeur</h3>
                         <div class="form-group">
                             <label for="host-name-input">Nom</label>
-                            <input type="text" class="form-control" id="host-name-input" placeholder="Nom">
+                            <input type="text" class="form-control" id="host-name-input"
+                                   placeholder="Ex: OVHcloud (anciennement OVH)" value="OVHcloud">
                         </div>
                         <div class="form-group">
                             <label for="host-address-input">Adresse</label>
-                            <input type="text" class="form-control" id="host-address-input" placeholder="Adresse">
-                        </div>
-                        <div class="form-group">
-                            <label for="host-cp-input">Code Postal</label>
-                            <input type="text" class="form-control" id="host-cp-input" placeholder="12345">
-                        </div>
-                        <div class="form-group">
-                            <label for="host-city-input">Ville</label>
-                            <input type="text" class="form-control" id="host-city-input" placeholder="Ville">
+                            <input type="text" class="form-control" id="host-address-input"
+                                   placeholder="Ex: 12 Rue des Hébergeurs 12345 Ville" value="2 rue Kellermann Roubaix France">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <h3>Résponsable des publications</h3>
                         <div class="form-group">
-                            <label for="publication-lastname-input">Nom</label>
-                            <input type="text" class="form-control" id="publication-lastname-input" placeholder="Nom">
+                            <label for="publication-name-input">Nom</label>
+                            <input type="text" class="form-control" id="publication-name-input"
+                                   placeholder="Ex: Jean Dupond">
                         </div>
                         <div class="form-group">
-                            <label for="publication-firstname-input">Prénom</label>
-                            <input type="text" class="form-control" id="publication-firstname-input"
-                                   placeholder="Prénom">
+                            <label for="publication-mail-input">Mail</label>
+                            <input type="email" class="form-control" id="publication-mail-input"
+                                   placeholder="Ex: exemple@mail.fr">
                         </div>
                         <h3>Webmaster</h3>
                         <div class="form-group">
-                            <label for="webmaster-lastname-input">Nom</label>
-                            <input type="text" class="form-control" id="webmaster-lastname-input" placeholder="Nom">
-                        </div>
-                        <div class="form-group">
-                            <label for="webmaster-firstname-input">Prénom</label>
-                            <input type="text" class="form-control" id="webmaster-firstname-input" placeholder="Prénom">
+                            <label for="webmaster-name-input">Nom</label>
+                            <input type="text" class="form-control" id="webmaster-name-input"
+                                   placeholder="Ex: Jean Dupond">
                         </div>
                         <div class="form-group">
                             <label for="webmaster-mail-input">Mail</label>
                             <input type="email" class="form-control" id="webmaster-mail-input"
-                                   placeholder="exemple@mail.fr">
+                                   placeholder="Ex: exemple@mail.fr">
                         </div>
-                        <h3>Site web</h3>
+                        <h3>Site web concerné</h3>
                         <div class="form-group">
-                            <label for="website-name-input">Nom du site cible</label>
-                            <input type="text" class="form-control" id="website-name-input" placeholder="Nom du site">
-                        </div>
-                        <div class="form-group">
-                            <label for="website-url-input">URL du site cible</label>
-                            <input type="text" class="form-control" id="website-url-input" aria-describedby="urlHelp"
-                                   placeholder="https://monsite.fr">
-                            <small id="urlHelp" class="form-text text-muted">Ne pas oublier https | exemple:
-                                https://lamarketerie.com</small>
+                            <label for="website-name-url-input">Nom de domaine</label>
+                            <input type="text" class="form-control" id="website-name-url-input"
+                                   aria-describedby="websiteHelp" placeholder="www.lamarketerie.com">
+                            <small id="websiteHelp" class="form-text text-muted">exemple: www.lamarketerie.com</small>
                         </div>
                         <div class="form-group">
                             <label for="website-mail-input">Mail de contact</label>
                             <input type="email" class="form-control" id="website-mail-input"
-                                   placeholder="Mail de contact">
-                        </div>
-                        <div class="form-group">
-                            <label for="url-privacy-input">URL de la page "Politique de confidentialité" du site
-                                cible</label>
-                            <input type="text" class="form-control" id="url-privacy-input"
-                                   aria-describedby="urlPrivacyHelp" placeholder="https://monsite.fr/privacy-policy">
-                            <small id="urlPrivacyHelp" class="form-text text-muted">Ne pas oublier https | exemple:
-                                https://lamarketerie.com/confidentialite</small>
+                                   placeholder="contact@exemple.com">
                         </div>
                     </div>
                 </div>
@@ -146,296 +136,277 @@
             <div class="row">
                 <div class="col-md-6">
                     <div id="mentions-legales">
-                        <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21
-                            juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à
-                            la
-                            connaissance des
-                            utilisateurs et visiteurs du site : <span class="website-url">www.lesite.com</span>
-                            les
-                            informations suivantes :</p>
-
+                        <h2>Informations légales</h2>
                         <div>
-                            <h2><strong>1. Informations légales :</strong></h2>
-
-                            <p>Statut du propriétaire : <strong>particulier</strong><br />
-                                Le Propriétaire est : <strong><span class="owner-firstname">Prénom</span> <span
-                                        class="owner-lastname">Nom</span></strong><br />
-                                Adresse postale du propriétaire : <strong><span
-                                        class="owner-address">Adresse</span>,
-                                    <span
-                                            class="owner-cp">Code Postale</span>,
-                                    <span class="owner-city">Ville</span></strong><br />
-                                 <br />
-                                Le Créateur du site est : <strong>lamarketerie.com</strong><br />
-                                Le Responsable de la publication est : <strong><span
-                                        class="publication-firstname">Prénom</span> <span
-                                        class="publication-lastname">Nom</span></strong><br />
-                                Contacter le responsable de la publication :
-                                <strong>contact@lamarketerie.com</strong><br />
-                                Le responsable de la publication est une<strong> personne physique</strong><br />
-                                <br />
-                                Le Webmaster est : <strong><span class="webmaster-firstname">Prénom</span> <span
-                                        class="webmaster-lastname">Nom</span></strong><br />
-                                Contacter le Webmaster :  <strong><span
-                                        class="webmaster-mail">email@mail.com</span></strong><br />
-                                L’hebergeur du site est : <strong><span class="host-name">Nom</span> <span
-                                        class="host-address">Adresse</span> <span class="host-cp"></span> <span
-                                        class="host-city">Ville</span></strong>
-                        </div>
-
-                        <div>
-                            <h2><strong>2. Présentation et principe :</strong></h2>
-
-                            <p>Est désigné ci-après : <strong>Utilisateur</strong>, tout internaute se
-                                connectant
-                                et utilisant le site susnommé : <span
-                                        class="website-name">Nom du site</span>.<br />
-                                Le site <span class="website-name">Nom du site</span> regroupe un ensemble de
-                                services,
-                                dans
-                                l'état, 
-                                mis
-                                à la disposition des utilisateurs. Il est ici précisé que ces derniers doivent
-                                rester
-                                courtois et faire
-                                preuve de bonne foi tant envers les autres utilisateurs qu'envers le webmaster
-                                du
-                                site
-                                <span
-                                        class="website-name">Nom du site</span>.
-                                Le
-                                site <span class="website-name">Nom du site</span> est mis à jour régulièrement
-                                par
-                                <span
-                                        class="publication-fisrtname">Prénom</span> <span
-                                        class="publication-lastname">Nom</span>.<br />
-                                <span class="publication-fisrtname">Prénom</span> <span
-                                        class="publication-lastname">Nom</span>
-                                s’efforce de fournir sur le site <span class="website-name">Nom du site</span>
-                                des
-                                informations les plus
-                                précises possibles
-                                (sous réserve de modifications apportées depuis leur mise en ligne), mais ne
-                                saurait
-                                garantir
-                                l'exactitude,
-                                la complétude et l'actualité des informations diffusées sur son site, qu’elles
-                                soient de
-                                son
-                                fait ou du
-                                fait
-                                des tiers partenaires qui lui fournissent ces informations. En conséquence,
-                                l'utilisateur
-                                reconnaît
-                                utiliser
-                                ces informations données (à titre indicatif, non exhaustives et susceptibles
-                                d'évoluer)
-                                sous
-                                sa
-                                responsabilité exclusive.</p>
-                        </div>
-
-                        <div>
-                            <h2><strong>3. Accessibilité :</strong></h2>
-                            <p>Le site <span class="website-name">Nom du site</span> est par principe accessible
-                                aux
-                                utilisateurs
-                                24/24h, 7/7j, sauf interruption,
-                                programmée ou non, pour les besoins de sa maintenance ou en cas de force
-                                majeure. En
-                                cas
-                                d’impossibilité
-                                d’accès au service, <span class="website-name">Nom du site</span> s’engage à
-                                faire
-                                son
-                                maximum afin de
-                                rétablir l’accès au service et
-                                s’efforcera alors de communiquer préalablement aux utilisateurs les dates et
-                                heures
-                                de
-                                l’intervention. 
-                                N’étant soumis qu’à une obligation de moyen, <span
-                                        class="website-name">Nom du site</span>
-                                ne saurait
-                                être tenu pour responsable de tout
-                                dommage, quelle qu’en soit la nature, résultant d’une indisponibilité du
-                                service.
+                            <h3>1. Présentation du site.</h3>
+                            <p>
+                                En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans
+                                l'économie numérique, il est précisé aux utilisateurs du site
+                                <a href="#" class="website-name-url" target="_blank"></a> l'identité des différents
+                                intervenants dans le cadre de sa réalisation et de son suivi :
+                            </p>
+                            <p>
+                                <strong>Propriétaire</strong> : <span class="owner-name"></span> – <span
+                                    class="owner-address"></span> <span
+                                    class="owner-sarl"></span><br />
+                                <strong>Créateur</strong> : <a
+                                    href="https://lamarkaterie.com" target="_blank">La Marketerie</a><br />
+                                <strong>Responsable publication</strong> : <span class="publication-name"></span> –
+                                <span class="publication-mail"></span><br />
+                                Le responsable publication est une personne physique ou
+                                une personne morale.<br />
+                                <strong>Webmaster</strong> : <span class="webmaster-name"></span> – <span
+                                    class="webmaster-mail"></span><br /><strong>Hébergeur</strong> : <span
+                                    class="host-name"></span> – <span class="host-address"></span>
                             </p>
                         </div>
 
                         <div>
-                            <h2><strong>4. Propriété intellectuelle :</strong></h2>
+                            <h3>2. Conditions générales d’utilisation du site et des services proposés.</h3>
                             <p>
-                                <span class="owner-firstname">Prénom</span> <span
-                                    class="owner-lastname">Nom</span>
-                                est
-                                propriétaire
-                                exclusif de tous les droits de propriété intellectuelle ou détient les droits
-                                d’usage sur tous les éléments accessibles sur le site, tant sur la structure que
-                                sur
-                                les
-                                textes, images,
-                                graphismes, logo, icônes, sons, logiciels…<br />
-                                Toute reproduction totale ou partielle du site <span
-                                    class="website-name">Nom du site</span>,
-                                représentation, modification, publication,
-                                adaptation totale ou partielle de l'un quelconque de ces éléments, quel que soit
-                                le
-                                moyen ou
-                                le procédé
-                                utilisé, est interdite, sauf autorisation écrite préalable de <span
-                                    class="owner-firstname">Prénom</span>
-                                <span class="owner-lastname">Nom</span>, propriétaire du site à l'email :
-                                <span class="owner-mail">Mail</span>, à défaut elle sera considérée comme
-                                constitutive
-                                d’une
-                                contrefaçon
-                                et
-                                passible de poursuite
-                                conformément aux dispositions des articles L.335-2 et suivants du Code de
-                                Propriété
+                                L’utilisation du site <a href="#" class="website-name-url" target="_blank"></a> implique
+                                l’acceptation pleine et entière des conditions générales d’utilisation ci-après
+                                décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées
+                                à tout moment, les utilisateurs du site <a href="#" class="website-name-url"
+                                                                           target="_blank"></a> sont donc invités à les
+                                consulter de manière régulière.
+                            </p>
+                            <p>
+                                Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour
+                                raison de maintenance technique peut être toutefois décidée par <span
+                                    class="owner-name"></span>, qui s’efforcera alors de communiquer préalablement
+                                aux utilisateurs les dates et heures de l’intervention.
+                            </p>
+                            <p>
+                                Le site <a href="#" class="website-name-url" target="_blank"></a> est mis à jour
+                                régulièrement par <span class="publication-name"></span>. De la même façon, les mentions
+                                légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à
+                                l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre
+                                connaissance.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>3. Description des services fournis.</h3>
+                            <p>
+                                Le site <a href="#" class="website-name-url" target="_blank"></a> a pour objet de
+                                fournir une information concernant l’ensemble des activités de la société.
+                            </p>
+                            <p>
+                                <span class="owner-name"></span> s’efforce de fournir sur le site <a href="#"
+                                                                                                     class="website-name-url"
+                                                                                                     target="_blank"></a>
+                                des
+                                informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable
+                                des omissions, des inexactitudes et des carences dans la mise à jour, qu’elles soient de
+                                son fait ou du fait des tiers partenaires qui lui fournissent ces informations.
+                            </p>
+                            <p>
+                                Tous les informations indiquées sur le site <a href="#" class="website-name-url"
+                                                                               target="_blank"></a> sont données à titre
+                                indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur
+                                le site <a href="#" class="website-name-url" target="_blank"></a> ne sont pas
+                                exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis
+                                leur mise en ligne.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>4. Limitations contractuelles sur les données techniques.</h3>
+                            <p>Le site utilise la technologie JavaScript.</p>
+                            <p>
+                                Le site Internet ne pourra être tenu responsable de dommages matériels liés à
+                                l’utilisation du site. De plus, l’utilisateur du site s’engage à accéder au site en
+                                utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de
+                                dernière génération mis-à-jour
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>5. Propriété intellectuelle et contrefaçons.</h3>
+                            <p>
+                                <span class="owner-name"></span> est propriétaire des droits de propriété intellectuelle
+                                ou détient les droits d’usage sur tous les éléments
+                                accessibles sur le site, notamment
+                                les textes, images, graphismes, logo, icônes, sons,
+                                logiciels.
+                            </p>
+                            <p>
+                                Toute reproduction, représentation, modification, publication, adaptation de tout ou
+                                partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est
+                                interdite, sauf autorisation écrite préalable de : <span class="owner-name"></span>.
+                            </p>
+                            <p>
+                                Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il
+                                contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément
+                                aux dispositions des articles L.335-2 et suivants du Code de Propriété
                                 Intellectuelle.
                             </p>
                         </div>
 
                         <div>
-                            <h2><strong>5. Liens hypertextes et cookies :</strong></h2>
-                            <p>Le site <span class="website-name">Nom du site</span> contient un certain nombre
-                                de
-                                liens
-                                hypertextes
-                                vers
-                                d’autres sites (partenaires,
-                                informations …) mis en place avec l’autorisation de <span
-                                        class="owner-firstname">Prénom</span> <span
-                                        class="owner-lastname">Nom</span>. Cependant, <span
-                                        class="owner-firstname">Prénom</span> <span
-                                        class="owner-lastname">Nom</span> n’a pas la possibilité
-                                de vérifier l'ensemble du contenu des sites ainsi visités et décline donc toute
-                                responsabilité de ce
-                                fait
-                                quand aux risques éventuels de contenus illicites.<br />
-                                L’utilisateur est informé que lors de ses visites sur le site <span
-                                        class="website-name">Nom du site</span>,
-                                un ou des cookies sont
-                                susceptibles de s’installer automatiquement sur son ordinateur par
-                                l'intermédiaire
-                                de
-                                son
-                                logiciel de
-                                navigation. Un cookie est un bloc de données qui ne permet pas d'identifier
-                                l'utilisateur,
-                                mais qui
-                                enregistre des informations relatives à la navigation de celui-ci sur le
-                                site. <br />
-                                Le paramétrage du logiciel de navigation permet d’informer de la présence de
-                                cookie
-                                et
-                                éventuellement,
-                                de la
-                                refuser de la manière décrite à l’adresse suivante : <a
-                                        href="http://www.cnil.fr">www.cnil.fr</a>.
-                                L’utilisateur peut toutefois configurer le navigateur de son ordinateur pour
-                                refuser
-                                l’installation des
-                                cookies, sachant que le refus d'installation d'un cookie peut entraîner
-                                l’impossibilité
-                                d’accéder à
-                                certains
-                                services. Pour tout bloquage des cookies, tapez dans votre moteur de recherche :
-                                bloquage
-                                des cookies
-                                sous
-                                Edge, firefox, Chrome ou encore Opera et suivez les instructions en fonction de
-                                votre
-                                version.</p>
+                            <h3>6. Limitations de responsabilité.</h3>
+                            <p>
+                                <span class="owner-name"></span> ne pourra être tenue responsable des dommages directs
+                                et indirects causés au matériel de l’utilisateur, lors
+                                de l’accès au site <a href="#"
+                                                      class="website-name-url"
+                                                      target="_blank"></a>, et résultant soit de l’utilisation d’un
+                                matériel ne répondant pas aux spécifications indiquées au point 4, soit de l’apparition
+                                d’un bug ou d’une incompatibilité.
+                            </p>
+                            <p>
+                                <span class="owner-name"></span> ne pourra également être tenue responsable des dommages
+                                indirects (tels par exemple qu’une perte de marché ou
+                                perte d’une chance) consécutifs à
+                                l’utilisation du site <a href="#"
+                                                         class="website-name-url"
+                                                         target="_blank"></a>.
+                            </p>
+                            <p>
+                                Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont
+                                à la disposition des utilisateurs. <span class="owner-name"></span> se réserve le droit
+                                de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui
+                                contreviendrait à la législation applicable en France, en particulier aux dispositions
+                                relatives à la protection des données. Le cas échéant, <span class="owner-name"></span>
+                                se
+                                réserve également la possibilité de mettre en cause la responsabilité civile et/ou
+                                pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux,
+                                diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie…).
+                            </p>
                         </div>
 
 
-                        <h2><strong>6. Protection des biens et des personnes - gestion des données personnelles
-                            :</strong>
-                        </h2>
-                        <p>En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6
-                            janvier
-                            1978, la loi
-                            n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la Directive
-                            Européenne
-                            du
-                            24
-                            octobre 1995.
-                        </p>
+                        <div>
+                            <h3>7. Gestion des données personnelles.</h3>
+                            <p>
+                                En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6
+                                janvier 1978, la loi n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la
+                                Directive Européenne du 24 octobre 1995.
+                            </p>
+                            <p>
+                                A l'occasion de l'utilisation du site <a href="#"
+                                                                         class="website-name-url"
+                                                                         target="_blank"></a>, peuvent êtres recueillies
+                                : l'URL des liens par l'intermédiaire desquels l'utilisateur a accédé au site
+                                <a href="#" class="website-name-url" target="_blank"></a>, le fournisseur d'accès de
+                                l'utilisateur, l'adresse de protocole Internet (IP) de l'utilisateur.
+                            </p>
+                            <p>
+                                En tout état de cause <span class="owner-name"></span> ne collecte des informations
+                                personnelles relatives à l'utilisateur que pour le besoin de certains services proposés
+                                par le site <a href="#" class="website-name-url" target="_blank"></a>. L'utilisateur
+                                fournit ces informations en toute connaissance de cause, notamment lorsqu'il procède par
+                                lui-même à leur saisie. Il est alors précisé à l'utilisateur du site <a href="#"
+                                                                                                        class="website-name-url"
+                                                                                                        target="_blank"></a>
+                                l’obligation ou non de fournir ces informations.
+                            </p>
+                            <p>
+                                Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier
+                                1978 relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose
+                                d’un droit d’accès, de rectification et d’opposition aux données personnelles le
+                                concernant, en effectuant sa demande écrite et signée, accompagnée d’une copie du titre
+                                d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la
+                                réponse doit être envoyée.
+                            </p>
+                            <p>
+                                Aucune information personnelle de l'utilisateur du site <a href="#"
+                                                                                           class="website-name-url"
+                                                                                           target="_blank"></a> n'est
+                                publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support
+                                quelconque à des tiers. Seule l'hypothèse du rachat de <span class="owner-name"></span>
+                                et de ses droits permettrait la transmission des dites informations à l'éventuel
+                                acquéreur qui serait à son tour tenu de la même obligation de conservation et de
+                                modification des données vis à vis de l'utilisateur du site <a href="#"
+                                                                                               class="website-name-url"
+                                                                                               target="_blank"></a>.
+                            </p>
+                            <p>
+                                Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998
+                                transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des
+                                bases de données.
+                            </p>
+                        </div>
 
-                        <p>Sur le site <span class="website-name">Nom du site</span>, <span
-                                class="owner-firstname">Prénom</span> <span
-                                class="owner-lastname">Nom</span> ne collecte des informations personnelles (
-                            suivant l'article 4 loi n°78-17 du 06 janvier 1978) relatives à l'utilisateur que
-                            pour
-                            le
-                            besoin
-                            de certains
-                            services proposés par le site <span class="website-name">Nom du site</span>.
-                            L'utilisateur
-                            fournit ces
-                            informations en toute connaissance
-                            de cause, notamment lorsqu'il procède par lui-même à leur saisie. Il est alors
-                            précisé à
-                            l'utilisateur du
-                            site <span class="website-name">Nom du site</span> l’obligation ou non de fournir
-                            ces
-                            informations.<br />
-                            Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6
-                            janvier
-                            1978
-                            relative à
-                            l’informatique, aux fichiers et aux libertés, tout utilisateur dispose d’un droit
-                            d’accès,
-                            de
-                            rectification,
-                            de suppression et d’opposition aux données personnelles le concernant. Pour
-                            l’exercer,
-                            adressez
-                            votre
-                            demande à <span class="website-name">Nom du site</span> par email : <strong><span
-                                    class="website-mail">Mail</span></strong>
-                            ou par écrit dûment signée, accompagnée d’une copie du titre d’identité avec
-                            signature
-                            du
-                            titulaire de la
-                            pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.</p>
+                        <div>
+                            <h3>8. Liens hypertextes et cookies.</h3>
+                            <p>
+                                Le site <a href="#" class="website-name-url" target="_blank"></a> contient un certain
+                                nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation
+                                de <span class="owner-name"></span>. Cependant, <span class="owner-name"></span> n’a pas
+                                la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en
+                                conséquence aucune responsabilité de ce fait.
+                            </p>
+                            <p>
+                                La navigation sur le site <a href="#" class="website-name-url" target="_blank"></a> est
+                                susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur.
+                                Un cookie est un fichier de petite taille, qui ne permet pas l’identification de
+                                l’utilisateur, mais qui enregistre des informations relatives à la navigation d’un
+                                ordinateur sur un site. Les données ainsi obtenues visent à faciliter la navigation
+                                ultérieure sur le site, et ont également vocation à permettre diverses mesures de
+                                fréquentation.
+                            </p>
+                            <p>
+                                Le refus d’installation d’un cookie peut entraîner l’impossibilité d’accéder à certains
+                                services. L’utilisateur peut toutefois configurer son ordinateur de la manière suivante,
+                                pour refuser l’installation des cookies :
+                            </p>
+                            <p>
+                                Sous Internet Explorer : onglet outil (pictogramme en forme de rouage en haut a droite)
+                                / options internet. Cliquez sur Confidentialité et choisissez Bloquer tous les cookies.
+                                Validez sur Ok.
+                            </p>
+                            <p>
+                                Sous Firefox : en haut de la fenêtre du navigateur, cliquez sur le bouton Firefox, puis
+                                aller dans l'onglet Options. Cliquer sur l'onglet Vie privée. Paramétrez les Règles de
+                                conservation sur : utiliser les paramètres personnalisés pour l'historique. Enfin
+                                décochez-la pour désactiver les cookies.
+                            </p>
+                            <p>
+                                Sous Safari : Cliquez en haut à droite du navigateur sur le pictogramme de menu
+                                (symbolisé par un rouage). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres
+                                avancés. Dans la section "Confidentialité", cliquez sur Paramètres de contenu. Dans la
+                                section "Cookies", vous pouvez bloquer les cookies.
+                            </p>
+                            <p>
+                                Sous Chrome : Cliquez en haut à droite du navigateur sur le pictogramme de menu
+                                (symbolisé par trois lignes horizontales). Sélectionnez Paramètres. Cliquez sur Afficher
+                                les paramètres avancés. Dans la section "Confidentialité", cliquez sur préférences. Dans
+                                l'onglet "Confidentialité", vous pouvez bloquer les cookies.
+                            </p>
+                        </div>
 
-                        <p>Aucune information personnelle de l'utilisateur du site <span
-                                class="website-name">Nom du site</span> n'est
-                            publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un
-                            support
-                            quelconque à des
-                            tiers. Seule l'hypothèse du rachat du site <span
-                                    class="website-name">Nom du site</span>
-                            et
-                            de
-                            ses droits
-                            autorise <span class="owner-firstname">Prénom</span> <span
-                                    class="owner-lastname">Nom</span>
-                            à
-                            transmettre
-                            les dites informations à l'éventuel acquéreur qui serait à son tour tenu à la même
-                            obligation de
-                            conservation et de modification des données vis à vis de l'utilisateur du site <span
-                                    class="website-name">Nom du site</span>.<br />
-                            Le site <span class="website-name">Nom du site</span> est en conformité avec le RGPD
-                            voir
-                            notre
-                            politique
-                            RGPD 
-                            <span class="url-privacy">Politique de confidentialité</span>.
-                        </p>
 
-                        <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet
-                            1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection
-                            juridique
-                            des
-                            bases
-                            de
-                            données.</p>
+                        <div>
+                            <h3>9. Droit applicable et attribution de juridiction.</h3>
+                            <p>
+                                Tout litige en relation avec l’utilisation du site <a href="#"
+                                                                                      class="website-name-url"
+                                                                                      target="_blank"></a> est soumis au
+                                droit français. Il est fait attribution exclusive de juridiction aux tribunaux
+                                compétents de Paris.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>10. Les principales lois concernées.</h3>
+                            <p>
+                                Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004
+                                relative à l'informatique, aux fichiers et aux libertés.
+                            </p>
+                            <p> Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.</p>
+                        </div>
+
+                        <div>
+                            <h3>11. Lexique.</h3>
+                            <p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p>
+                            <p>
+                                Informations personnelles : « les informations qui permettent, sous quelque forme que ce
+                                soit, directement ou non, l'identification des personnes physiques auxquelles elles
+                                s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -444,8 +415,7 @@
                             <h2><u>Définitions :</u></h2>
                             <p>
                                 <b>L'Éditeur :</b> La personne, physique ou morale, qui édite les services de
-                                communication au public en
-                                ligne.<br>
+                                communication au public en ligne.<br>
                                 <b>Le Site :</b> L'ensemble des sites, pages Internet et services en ligne proposés
                                 par
                                 l'Éditeur.<br>
@@ -866,7 +836,8 @@
 
         <footer>
             <p class="text-center">Développé avec ❤ par <a href="https://github.com/leomoille" target="_blank">Léo
-                Moille</a> pour La
+                Moille</a>
+                pour La
                 Marketerie !</p>
         </footer>
 
