@@ -46,7 +46,7 @@ $(document).ready(function () {
     $('#generated-content').show()
   })
 
-  function docopy () {
+  function docopy() {
 
     // Cible de l'élément qui doit être copié
     const target = this.dataset.target
@@ -68,7 +68,7 @@ $(document).ready(function () {
         console.log('Copié !')
       }
     } catch (err) {
-      // Une erreur est surevnue lors de la tentative de copie
+      // Une erreur est surevenue lors de la tentative de copie
       alert(err)
     }
 
